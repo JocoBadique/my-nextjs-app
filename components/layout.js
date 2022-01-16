@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 
-const layout = ({children}) => {
+const Layout = ({children}) => {
     return (
         <div className='content'>
             <Navbar />
@@ -12,4 +12,4 @@ const layout = ({children}) => {
     )
 }
 
-export default layout
+export default Layout

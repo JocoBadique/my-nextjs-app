@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 
-const notfound = () => {
+const NotFound = () => {
     const router = useRouter();
 
     useEffect(() => {
@@ -27,4 +27,4 @@ const notfound = () => {
     )
 }
 
-export default notfound
+export default NotFound

@@ -12,7 +12,7 @@ export const getStaticProps = async () => {
     }
 }
 
-const ninjas = ({ninjas}) => {
+const Ninjas = ({ninjas}) => {
     return (
     <>
         <Head>
@@ -32,4 +32,4 @@ const ninjas = ({ninjas}) => {
     )
 }
 
-export default ninjas
+export default Ninjas

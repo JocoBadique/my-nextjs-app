@@ -17,6 +17,7 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async (context) => {
+    console.log(`${context}`)
     const id = context.params.id;
     const res = await fetch('https://jsonplaceholder.typicode.com/users/' + id);
     const data = await res.json();
@@ -26,7 +27,7 @@ export const getStaticProps = async (context) => {
     }
 }
 
-const details = ({ ninja }) => {
+const Details = ({ ninja }) => {
     return (
 
     <>
@@ -43,4 +44,4 @@ const details = ({ ninja }) => {
     )
 }
 
-export default details
+export default Details
